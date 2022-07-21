@@ -1,9 +1,12 @@
 import { ChakraProvider } from "@chakra-ui/react"
+import { SidebarProvider } from "../contexts/SidebarContext"
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <Component {...pageProps} />
+      <SidebarProvider>
+        <Component {...pageProps} />
+      </SidebarProvider>
     </ChakraProvider>
   )
 }
