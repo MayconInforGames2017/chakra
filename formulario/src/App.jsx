@@ -1,34 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import {
+  Flex,
+  Box,
+  Center,
+  FormControl,
+  Input,
+  FormLabel,
+  HStack,
+  RadioGroup,
+  Radio,
+  Button,
+} from '@chakra-ui/react'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <Box h="100vh">
+      <Center
+        as="header"
+        h={150}
+        bg="teal.500"
+        color="white"
+        fontWeight="bold"
+        fontSize="4xl"
+        pb="8"
+      >
+        Formulário
+      </Center>
+    </Box>
   )
+
 }
 
 export default App
